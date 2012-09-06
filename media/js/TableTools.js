@@ -2176,7 +2176,7 @@ TableTools.BUTTONS = {
 	"text": $.extend( {}, TableTools.buttonBase ),
 
 	"select": $.extend( {}, TableTools.buttonBase, {
-		"sButtonText": "Seleccione el botón",
+		"sButtonText": "Seleccionar",
 		"fnSelect": function( nButton, oConfig ) {
 			if ( this.fnGetSelected().length !== 0 ) {
 				$(nButton).removeClass( this.classes.buttons.disabled );
@@ -2190,7 +2190,7 @@ TableTools.BUTTONS = {
 	} ),
 
 	"select_single": $.extend( {}, TableTools.buttonBase, {
-		"sButtonText": "Seleccione el botón",
+		"sButtonText": "Seleccionar",
 		"fnSelect": function( nButton, oConfig ) {
 			var iSelected = this.fnGetSelected().length;
 			if ( iSelected == 1 ) {
