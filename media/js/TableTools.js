@@ -2161,13 +2161,13 @@ TableTools.BUTTONS = {
 	} ),
 
 	"print": $.extend( {}, TableTools.buttonBase, {
-		"sInfo": "<h6>Print view</h6><p>Please use your browser's print function to "+
-		  "print this table. Press escape when finished.",
+		"sInfo": "<h6>VISTA DE IMPRESION</h6><p>Por favor utilice la función de impresión de su navegador "+
+		  "para imprimir esta tabla. Pulse la tecla ESC cuando haya finalizado.",
 		"sMessage": null,
 		"bShowAll": true,
-		"sToolTip": "View print view",
+		"sToolTip": "Ver Versión para imprimir",
 		"sButtonClass": "DTTT_button_print",
-		"sButtonText": "Print",
+		"sButtonText": "Imprimir",
 		"fnClick": function ( nButton, oConfig ) {
 			this.fnPrint( true, oConfig );
 		}
@@ -2176,7 +2176,7 @@ TableTools.BUTTONS = {
 	"text": $.extend( {}, TableTools.buttonBase ),
 
 	"select": $.extend( {}, TableTools.buttonBase, {
-		"sButtonText": "Select button",
+		"sButtonText": "Seleccione el botón",
 		"fnSelect": function( nButton, oConfig ) {
 			if ( this.fnGetSelected().length !== 0 ) {
 				$(nButton).removeClass( this.classes.buttons.disabled );
@@ -2190,7 +2190,7 @@ TableTools.BUTTONS = {
 	} ),
 
 	"select_single": $.extend( {}, TableTools.buttonBase, {
-		"sButtonText": "Select button",
+		"sButtonText": "Seleccione el botón",
 		"fnSelect": function( nButton, oConfig ) {
 			var iSelected = this.fnGetSelected().length;
 			if ( iSelected == 1 ) {
@@ -2205,7 +2205,7 @@ TableTools.BUTTONS = {
 	} ),
 
 	"select_all": $.extend( {}, TableTools.buttonBase, {
-		"sButtonText": "Select all",
+		"sButtonText": "Seleccionar todo",
 		"fnClick": function( nButton, oConfig ) {
 			this.fnSelectAll();
 		},
@@ -2219,7 +2219,7 @@ TableTools.BUTTONS = {
 	} ),
 
 	"select_none": $.extend( {}, TableTools.buttonBase, {
-		"sButtonText": "Deselect all",
+		"sButtonText": "Deseleccionar todo",
 		"fnClick": function( nButton, oConfig ) {
 			this.fnSelectNone();
 		},
@@ -2237,7 +2237,7 @@ TableTools.BUTTONS = {
 
 	"ajax": $.extend( {}, TableTools.buttonBase, {
 		"sAjaxUrl": "/xhr.php",
-		"sButtonText": "Ajax button",
+		"sButtonText": "Botón Ajax",
 		"fnClick": function( nButton, oConfig ) {
 			var sData = this.fnGetTableData(oConfig);
 			$.ajax( {
